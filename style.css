@@ -48,7 +48,7 @@ body {
 }
 
 .card-img {
-  background-image: url(/images/bg-pattern-card.svg);
+  background-image: url(./images/bg-pattern-card.svg);
   /* background-position: -10px 0; */
   position: relative;
 }
