@@ -112,3 +112,15 @@ body {
   color: #777;
   letter-spacing: 2px;
 }
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  left: 050%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+.attribution a {
+  color: cyan;
+}
