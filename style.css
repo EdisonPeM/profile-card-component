@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Cabin', sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  place-items: center;
+  background: linear-gradient(#19a1ad, #158d9d);
+  color: #222;
+  line-height: 1.5;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg {
+  opacity: 0.5;
+  position: absolute;
+  height: 100vh;
+}
+
+.bg-top {
+  top: -50%;
+  right: 50%;
+}
+
+.bg-bottom {
+  bottom: -50%;
+  left: 50%;
+}
+
+.card {
+  position: relative;
+  max-width: 90%;
+  width: 325px;
+  height: 375px;
+  border-radius: 1em;
+  background-color: #fff;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 1fr 1fr auto;
+}
+
+.card-img {
+  background-image: url(/images/bg-pattern-card.svg);
+  /* background-position: -10px 0; */
+  position: relative;
+}
+
+.card-img img {
+  display: block;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.card-profile {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.profile-name {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.profile-age {
+  margin-left: 5px;
+  color: #777;
+}
+
+.profile-location {
+  font-size: 0.9em;
+  margin-top: 5px;
+  color: #777;
+}
+
+.card-info {
+  border-top: 1px solid #eee;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 0 5px 5px 0;
+}
+
+.info {
+  padding: 1.25em 0;
+}
+
+.info-number {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.info-description {
+  font-size: 0.6em;
+  color: #777;
+  letter-spacing: 2px;
+}
